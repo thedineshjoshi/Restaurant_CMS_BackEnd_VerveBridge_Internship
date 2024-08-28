@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68027925-E664-4EE8-AA5E-184B2416B0B1}|Infrastructure\\Infrastructure.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68027925-E664-4EE8-AA5E-184B2416B0B1}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{998B910F-F2D1-4EDE-AFAE-F73785AE6A8C}|Domain\\Domain.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\domain\\testimonial\\testimonial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{998B910F-F2D1-4EDE-AFAE-F73785AE6A8C}|Domain\\Domain.csproj|solutionrelative:domain\\testimonial\\testimonial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{998B910F-F2D1-4EDE-AFAE-F73785AE6A8C}|Domain\\Domain.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\domain\\contact\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{998B910F-F2D1-4EDE-AFAE-F73785AE6A8C}|Domain\\Domain.csproj|solutionrelative:domain\\contact\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{998B910F-F2D1-4EDE-AFAE-F73785AE6A8C}|Domain\\Domain.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\domain\\newsletter\\newsletter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{998B910F-F2D1-4EDE-AFAE-F73785AE6A8C}|Domain\\Domain.csproj|solutionrelative:domain\\newsletter\\newsletter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{998B910F-F2D1-4EDE-AFAE-F73785AE6A8C}|Domain\\Domain.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\domain\\chefs\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{998B910F-F2D1-4EDE-AFAE-F73785AE6A8C}|Domain\\Domain.csproj|solutionrelative:domain\\chefs\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{998B910F-F2D1-4EDE-AFAE-F73785AE6A8C}|Domain\\Domain.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\domain\\menu\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{998B910F-F2D1-4EDE-AFAE-F73785AE6A8C}|Domain\\Domain.csproj|solutionrelative:domain\\menu\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70463176-6C44-4F10-8B99-2C7A895BA163}|WebApplication1\\Restaurant.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\webapplication1\\controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70463176-6C44-4F10-8B99-2C7A895BA163}|WebApplication1\\Restaurant.csproj|solutionrelative:webapplication1\\controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70463176-6C44-4F10-8B99-2C7A895BA163}|WebApplication1\\Restaurant.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70463176-6C44-4F10-8B99-2C7A895BA163}|WebApplication1\\Restaurant.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +42,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Domain\\Contact\\Contact.cs",
+              "RelativeDocumentMoniker": "Domain\\Contact\\Contact.cs",
+              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Domain\\Contact\\Contact.cs",
+              "RelativeToolTip": "Domain\\Contact\\Contact.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T14:26:28.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Newsletter.cs",
+              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Domain\\NewsLetter\\Newsletter.cs",
+              "RelativeDocumentMoniker": "Domain\\NewsLetter\\Newsletter.cs",
+              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Domain\\NewsLetter\\Newsletter.cs",
+              "RelativeToolTip": "Domain\\NewsLetter\\Newsletter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T14:23:18.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Testimonial.cs",
+              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Domain\\Testimonial\\Testimonial.cs",
+              "RelativeDocumentMoniker": "Domain\\Testimonial\\Testimonial.cs",
+              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Domain\\Testimonial\\Testimonial.cs",
+              "RelativeToolTip": "Domain\\Testimonial\\Testimonial.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T14:20:58.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Chef.cs",
+              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Domain\\Chefs\\Chef.cs",
+              "RelativeDocumentMoniker": "Domain\\Chefs\\Chef.cs",
+              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Domain\\Chefs\\Chef.cs",
+              "RelativeToolTip": "Domain\\Chefs\\Chef.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T14:16:38.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Domain\\Menu\\Menu.cs",
+              "RelativeDocumentMoniker": "Domain\\Menu\\Menu.cs",
+              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Domain\\Menu\\Menu.cs",
+              "RelativeToolTip": "Domain\\Menu\\Menu.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T14:12:20.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAIwH4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T13:56:12.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppController.cs",
+              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\WebApplication1\\Controllers\\AppController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AppController.cs",
+              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\WebApplication1\\Controllers\\AppController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\AppController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T13:54:15.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAIwBIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T13:50:20.386Z"
             }
           ]
         }
