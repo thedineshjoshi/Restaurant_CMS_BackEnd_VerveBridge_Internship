@@ -1,8 +1,11 @@
 ﻿using Application.Common.Interfaces;
+using Domain.AboutUs;
 using Domain.Chefs;
-using Domain.Contact;
+using Domain.Features;
+using Domain.Footer;
+using Domain.Header;
+using Domain.HeroSection;
 using Domain.Menu;
-using Domain.NewsLetter;
 using Domain.OnlineResevation;
 using Domain.Testimonial;
 using Infrastructure.Identity;
@@ -24,29 +27,29 @@ namespace Infrastructure.Persistence
         {
 
         }
-        public DbSet<Menu> Menus { get; set; }
-        public DbSet<MenuSection> MenuSections { get; set; }
+
+        public DbSet<AboutUs> AboutUs { get; set; }
+        public DbSet<Feature> Features { get; set; }
+        public DbSet<Footer> Footers { get; set; }
+        public DbSet<SocialLink> SocialLinks { get; set; }
+        public DbSet<Header> Headers { get; set; }
+        public DbSet<HeroSection> HeroSections { get; set; }
+        public DbSet<MenuCategory> Menus { get; set; }
         public DbSet<MenuItem> MenuItems { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
-        public DbSet<Chef> Chefs { get; set; }
+        public DbSet<TeamMember> TeamMembers { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
-        public DbSet<Contact> Contacts { get; set; }
-        public DbSet<Newsletter> Newsletters { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
 
-            // Configure relationships, if necessary
-            modelBuilder.Entity<Menu>()
-                .HasMany(m => m.MenuSections)
-                .WithOne(ms => ms.Menu)
-                .HasForeignKey(ms => ms.MenuId);
-
-            modelBuilder.Entity<MenuSection>()
-                .HasMany(ms => ms.MenuItems)
-                .WithOne(mi => mi.MenuSection)
-                .HasForeignKey(mi => mi.MenuSectionId);
+            modelBuilder.Entity<MenuCategory>()
+           .HasMany(c => c.MenuItems)
+           .WithOne(i => i.MenuCategory)
+           .HasForeignKey(i => i.MenuCategoryId)
+           .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<ApplicationUser>()
                 .HasMany(u => u.UserClaims)
@@ -122,5 +125,5 @@ namespace Infrastructure.Persistence
             );
         }
     }
-    }
+}
 

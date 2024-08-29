@@ -6,10 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Food\Breakfast\" />
-    <Folder Include="Food\Lunch\" />
-    <Folder Include="Food\Dinner\" />
-  </ItemGroup>
-
 </Project>

@@ -1,0 +1,12 @@
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\bin\Debug\net8.0\Domain.dll
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\obj\Debug\net8.0\Domain.dll
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Dinesh Prasad Joshi\Programmings\Restaurant\Restaurant_Backend_VerveBridge\Restaurant\Domain\obj\Debug\net8.0\ref\Domain.dll

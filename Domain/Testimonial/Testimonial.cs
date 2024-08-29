@@ -10,13 +10,9 @@ namespace Domain.Testimonial
     public class Testimonial
     {
         public Guid id { get; set; }
-
-        [Required]
-        public string CustomerSaying { get; set; } // The testimonial or feedback from the customer
-
-        [Required]
-        public string CustomerName { get; set; } // The name of the customer
-
-        public string ImageUrl { get; set; } // URL or path to the customer's image
+        public string CustomerSaying { get; set; }
+        public string CustomerName { get; set; }
+        public string CustomerImageUrl { get; set; }
     }
+
 }
