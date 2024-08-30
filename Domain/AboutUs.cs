@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.AboutUs
+namespace Domain
 {
-    public class AboutUs
+    public class About
     {
         public Guid id { get; set; }
         public string Title { get; set; }

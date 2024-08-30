@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Header
+namespace Domain
 {
-    public class Header
+    public class HeaderTop
     {
         public Guid id { get; set; }
         public string LogoUrl { get; set; }

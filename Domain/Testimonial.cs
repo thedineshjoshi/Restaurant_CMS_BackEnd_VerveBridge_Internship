@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Testimonial
+namespace Domain
 {
-    public class Testimonial
+    public class CustomerTestimonial
     {
         public Guid id { get; set; }
         public string CustomerSaying { get; set; }

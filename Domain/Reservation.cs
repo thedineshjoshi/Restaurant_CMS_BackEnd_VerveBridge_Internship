@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.OnlineResevation
+namespace Domain
 {
-    public class Reservation
+    public class OnlineReservation
     {
         public Guid id { get; set; }
         public string Name { get; set; }

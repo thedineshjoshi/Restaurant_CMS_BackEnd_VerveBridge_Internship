@@ -1,13 +1,5 @@
 ﻿using Application.Common.Interfaces;
-using Domain.AboutUs;
-using Domain.Chefs;
-using Domain.Features;
-using Domain.Footer;
-using Domain.Header;
-using Domain.HeroSection;
-using Domain.Menu;
-using Domain.OnlineResevation;
-using Domain.Testimonial;
+using Domain;
 using Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -28,17 +20,17 @@ namespace Infrastructure.Persistence
 
         }
 
-        public DbSet<AboutUs> AboutUs { get; set; }
+        public DbSet<About> AboutUs { get; set; }
         public DbSet<Feature> Features { get; set; }
-        public DbSet<Footer> Footers { get; set; }
+        public DbSet<FooterBottom> Footers { get; set; }
         public DbSet<SocialLink> SocialLinks { get; set; }
-        public DbSet<Header> Headers { get; set; }
-        public DbSet<HeroSection> HeroSections { get; set; }
+        public DbSet<HeaderTop> Headers { get; set; }
+        public DbSet<Hero> HeroSections { get; set; }
         public DbSet<MenuCategory> Menus { get; set; }
         public DbSet<MenuItem> MenuItems { get; set; }
-        public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<OnlineReservation> Reservations { get; set; }
         public DbSet<TeamMember> TeamMembers { get; set; }
-        public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<CustomerTestimonial> Testimonials { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

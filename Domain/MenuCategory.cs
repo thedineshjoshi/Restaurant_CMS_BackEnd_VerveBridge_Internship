@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Menu
+namespace Domain
 {
     public class MenuCategory
     {
