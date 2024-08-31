@@ -12,6 +12,7 @@ namespace Application.Social_Links.Commands.CreateSocailLink
 {
     public class CreateSocialLinkCommand : IRequest<Guid>
     {
+        public Guid Id { get; set; }
         public string Platform { get; set; }
         public string Url { get; set; }
     }

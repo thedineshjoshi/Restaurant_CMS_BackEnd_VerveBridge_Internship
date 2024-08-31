@@ -2,6 +2,7 @@
 using Application.AboutUs.Queries.GetAboutUs;
 using Application.Common.Interfaces;
 using Application.Features.Queries.GetFeature;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Restaurant.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize(Policy = "NeedContentManagerRole")]
     [ApiController]
     public class AboutController : ApiControllerBase
     {
@@ -55,12 +57,12 @@ namespace Restaurant.Controllers
             await _mediator.Send(command);
             return NoContent();
         }
-    }
 
-// DELETE api/<AboutController>/5
-[HttpDelete("{id}")]
+        // DELETE api/<AboutController>/5
+        [HttpDelete("{id}")]
         public void Delete(int id)
         {
         }
     }
 }
+

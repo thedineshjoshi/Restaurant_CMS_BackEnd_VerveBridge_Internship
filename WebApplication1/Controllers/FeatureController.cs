@@ -2,6 +2,7 @@
 using Application.Features.Commands.CreateFeature;
 using Application.Features.Queries.GetFeature;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Restaurant.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize(Policy = "NeedContentManagerRole")]
     [ApiController]
     public class FeatureController : ApiControllerBase
     {

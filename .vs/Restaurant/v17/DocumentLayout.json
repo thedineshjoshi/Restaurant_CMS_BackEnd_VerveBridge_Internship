@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70463176-6C44-4F10-8B99-2C7A895BA163}|WebApplication1\\Restaurant.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\webapplication1\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70463176-6C44-4F10-8B99-2C7A895BA163}|WebApplication1\\Restaurant.csproj|solutionrelative:webapplication1\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70463176-6C44-4F10-8B99-2C7A895BA163}|WebApplication1\\Restaurant.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\webapplication1\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70463176-6C44-4F10-8B99-2C7A895BA163}|WebApplication1\\Restaurant.csproj|solutionrelative:webapplication1\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02C66032-9EB0-45B5-93F6-E2152729EA1A}|Application\\Application.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\application\\menu\\commands\\createmenuitem\\createmenuitemcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02C66032-9EB0-45B5-93F6-E2152729EA1A}|Application\\Application.csproj|solutionrelative:application\\menu\\commands\\createmenuitem\\createmenuitemcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68027925-E664-4EE8-AA5E-184B2416B0B1}|Infrastructure\\Infrastructure.csproj|d:\\dinesh prasad joshi\\programmings\\restaurant\\restaurant_backend_vervebridge\\restaurant\\infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68027925-E664-4EE8-AA5E-184B2416B0B1}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReservationController.cs",
-              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\WebApplication1\\Controllers\\ReservationController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ReservationController.cs",
-              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\WebApplication1\\Controllers\\ReservationController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\ReservationController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAUwHIAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:03:24.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateMenuItemCommand.cs",
-              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Application\\Menu\\Commands\\CreateMenuItem\\CreateMenuItemCommand.cs",
-              "RelativeDocumentMoniker": "Application\\Menu\\Commands\\CreateMenuItem\\CreateMenuItemCommand.cs",
-              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\Application\\Menu\\Commands\\CreateMenuItem\\CreateMenuItemCommand.cs",
-              "RelativeToolTip": "Application\\Menu\\Commands\\CreateMenuItem\\CreateMenuItemCommand.cs",
-              "ViewState": "AQIAAAEAAAAwMzMzMzMrwA0AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:02:11.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\WebApplication1\\Controllers\\MenuController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\MenuController.cs",
-              "ToolTip": "D:\\Dinesh Prasad Joshi\\Programmings\\Restaurant\\Restaurant_Backend_VerveBridge\\Restaurant\\WebApplication1\\Controllers\\MenuController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\MenuController.cs",
-              "ViewState": "AQIAACYAAAAAAQAAAAAIwC4AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:00:32.141Z",
+              "WhenOpened": "2024-08-31T01:25:45.802Z",
               "EditorCaption": ""
             }
           ]

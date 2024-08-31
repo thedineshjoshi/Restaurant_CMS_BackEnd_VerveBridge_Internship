@@ -21,8 +21,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("NeedAdminRole", policy => policy.RequireRole("Admin"));
-    options.AddPolicy("CanAddStudents", policy => policy.RequireRole("Author", "Admin"));
-    options.AddPolicy("NeedSubscriber", policy => policy.RequireRole("Subscriber"));
+    options.AddPolicy("NeedContentManagerRole", policy => policy.RequireRole("ContentManager", "Admin"));
+    options.AddPolicy("NeedReservationManagerRole", policy => policy.RequireRole("ReservationManager", "ContentManager", "Admin"));
 });
 
 var app = builder.Build();

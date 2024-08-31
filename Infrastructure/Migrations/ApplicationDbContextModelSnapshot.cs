@@ -22,7 +22,7 @@ namespace Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Domain.AboutUs.AboutUs", b =>
+            modelBuilder.Entity("Domain.About", b =>
                 {
                     b.Property<Guid>("id")
                         .ValueGeneratedOnAdd()
@@ -51,7 +51,257 @@ namespace Infrastructure.Migrations
                     b.ToTable("AboutUs");
                 });
 
-            modelBuilder.Entity("Domain.Chefs.TeamMember", b =>
+            modelBuilder.Entity("Domain.CustomerTestimonial", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CustomerImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerSaying")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Testimonials");
+                });
+
+            modelBuilder.Entity("Domain.Feature", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IconUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Features");
+                });
+
+            modelBuilder.Entity("Domain.FooterBottom", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CompanyInfo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactInfo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NewsletterText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Footers");
+                });
+
+            modelBuilder.Entity("Domain.HeaderTop", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("BookTableButtonLink")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BookTableButtonText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogoUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Headers");
+                });
+
+            modelBuilder.Entity("Domain.Hero", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ButtonLink")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ButtonText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Subtitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("HeroSections");
+                });
+
+            modelBuilder.Entity("Domain.MenuCategory", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Menus");
+                });
+
+            modelBuilder.Entity("Domain.MenuItem", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("MenuCategoryId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MenuCategoryId");
+
+                    b.ToTable("MenuItems");
+                });
+
+            modelBuilder.Entity("Domain.NavigationItem", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("HeaderTopid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("HeaderTopid");
+
+                    b.ToTable("NavigationItem");
+                });
+
+            modelBuilder.Entity("Domain.OnlineReservation", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumberOfPeople")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("ReservationDateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("SpecialRequest")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Reservations");
+                });
+
+            modelBuilder.Entity("Domain.SocialLink", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("FooterBottomid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PlatformName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("FooterBottomid");
+
+                    b.ToTable("SocialLinks");
+                });
+
+            modelBuilder.Entity("Domain.TeamMember", b =>
                 {
                     b.Property<Guid>("id")
                         .ValueGeneratedOnAdd()
@@ -84,256 +334,6 @@ namespace Infrastructure.Migrations
                     b.HasKey("id");
 
                     b.ToTable("TeamMembers");
-                });
-
-            modelBuilder.Entity("Domain.Features.Feature", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("IconUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Features");
-                });
-
-            modelBuilder.Entity("Domain.Footer.Footer", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("CompanyInfo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ContactInfo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NewsletterText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Footers");
-                });
-
-            modelBuilder.Entity("Domain.Footer.SocialLink", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("Footerid")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Link")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PlatformName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("Footerid");
-
-                    b.ToTable("SocialLinks");
-                });
-
-            modelBuilder.Entity("Domain.Header.Header", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("BookTableButtonLink")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("BookTableButtonText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LogoUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Headers");
-                });
-
-            modelBuilder.Entity("Domain.Header.NavigationItem", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("Headerid")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Link")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("Headerid");
-
-                    b.ToTable("NavigationItem");
-                });
-
-            modelBuilder.Entity("Domain.HeroSection.HeroSection", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("ButtonLink")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ButtonText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Subtitle")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("HeroSections");
-                });
-
-            modelBuilder.Entity("Domain.Menu.MenuCategory", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Menus");
-                });
-
-            modelBuilder.Entity("Domain.Menu.MenuItem", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("MenuCategoryId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MenuCategoryId");
-
-                    b.ToTable("MenuItems");
-                });
-
-            modelBuilder.Entity("Domain.OnlineResevation.Reservation", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("NumberOfPeople")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("ReservationDateTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("SpecialRequest")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Reservations");
-                });
-
-            modelBuilder.Entity("Domain.Testimonial.Testimonial", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("CustomerImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CustomerName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CustomerSaying")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Testimonials");
                 });
 
             modelBuilder.Entity("Infrastructure.Identity.ApplicationRole", b =>
@@ -370,8 +370,8 @@ namespace Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("dd24143c-7b6d-4e71-8d52-da23811df169"),
-                            ConcurrencyStamp = "e40d606f-c335-4ecc-a921-7346d26eecf5",
+                            Id = new Guid("fd662e4a-0d50-4c80-a52d-0b001281e5f9"),
+                            ConcurrencyStamp = "2307a0b4-86bb-4ab8-b1af-30e936b49c94",
                             Description = "Can Manage Everything",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
@@ -452,18 +452,18 @@ namespace Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("a30a3e41-6439-4e88-a7c6-1d908b400d7e"),
+                            Id = new Guid("c6e6cc0c-f11a-4d47-be8e-ab70b4d35bb5"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1eac2887-885d-4f72-8218-fee89dceafed",
+                            ConcurrencyStamp = "9df54af4-8d9c-4db2-9564-078d93bdacd7",
                             Email = "dineshjoshi0025@gmail.com",
                             EmailConfirmed = true,
                             IsActive = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DINESHJOSHI0025@GMAIL.COM",
                             NormalizedUserName = "DINESH25",
-                            PasswordHash = "AQAAAAIAAYagAAAAELnFv9lZMfxrjcGuy962dbVFuwtPZPuIIL/zH7vjpjDVNzl6CfLuFOVzacdli/EmmA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEFXiZVR1qa0zBtFIqa5vnRGxr0OdD3c9t9aCLUtvcKzCyJU/wKrUi7wr1wwwgjICA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "bc9845e7-ecec-4291-807f-7bdbb64051fd",
+                            SecurityStamp = "03c5bc5e-81c1-43b9-a40e-84dc3217942e",
                             TwoFactorEnabled = false,
                             UserName = "Dinesh25"
                         });
@@ -555,8 +555,8 @@ namespace Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("a30a3e41-6439-4e88-a7c6-1d908b400d7e"),
-                            RoleId = new Guid("dd24143c-7b6d-4e71-8d52-da23811df169")
+                            UserId = new Guid("c6e6cc0c-f11a-4d47-be8e-ab70b4d35bb5"),
+                            RoleId = new Guid("fd662e4a-0d50-4c80-a52d-0b001281e5f9")
                         });
                 });
 
@@ -579,29 +579,29 @@ namespace Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Domain.Footer.SocialLink", b =>
+            modelBuilder.Entity("Domain.MenuItem", b =>
                 {
-                    b.HasOne("Domain.Footer.Footer", null)
-                        .WithMany("SocialLinks")
-                        .HasForeignKey("Footerid");
-                });
-
-            modelBuilder.Entity("Domain.Header.NavigationItem", b =>
-                {
-                    b.HasOne("Domain.Header.Header", null)
-                        .WithMany("NavigationItems")
-                        .HasForeignKey("Headerid");
-                });
-
-            modelBuilder.Entity("Domain.Menu.MenuItem", b =>
-                {
-                    b.HasOne("Domain.Menu.MenuCategory", "MenuCategory")
+                    b.HasOne("Domain.MenuCategory", "MenuCategory")
                         .WithMany("MenuItems")
                         .HasForeignKey("MenuCategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("MenuCategory");
+                });
+
+            modelBuilder.Entity("Domain.NavigationItem", b =>
+                {
+                    b.HasOne("Domain.HeaderTop", null)
+                        .WithMany("NavigationItems")
+                        .HasForeignKey("HeaderTopid");
+                });
+
+            modelBuilder.Entity("Domain.SocialLink", b =>
+                {
+                    b.HasOne("Domain.FooterBottom", null)
+                        .WithMany("SocialLinks")
+                        .HasForeignKey("FooterBottomid");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
@@ -655,17 +655,17 @@ namespace Infrastructure.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Domain.Footer.Footer", b =>
+            modelBuilder.Entity("Domain.FooterBottom", b =>
                 {
                     b.Navigation("SocialLinks");
                 });
 
-            modelBuilder.Entity("Domain.Header.Header", b =>
+            modelBuilder.Entity("Domain.HeaderTop", b =>
                 {
                     b.Navigation("NavigationItems");
                 });
 
-            modelBuilder.Entity("Domain.Menu.MenuCategory", b =>
+            modelBuilder.Entity("Domain.MenuCategory", b =>
                 {
                     b.Navigation("MenuItems");
                 });

@@ -1,6 +1,6 @@
 ﻿using Application.Common.Interfaces;
-using Application.Menu.Commands.CreateMenuItem;
-using Application.Menu.Queries.GetMenu;
+using Application.Social_Links.Commands.CreateSocailLink;
+using Application.Social_Links.Queries.GetAllSocialLinks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,40 +11,40 @@ namespace Restaurant.Controllers
     [Route("api/[controller]")]
     [Authorize(Policy = "NeedContentManagerRole")]
     [ApiController]
-    public class MenuController : ApiControllerBase
+    public class SocialLinksController : ApiControllerBase
     {
         private readonly IApplicationDbContext _dbContext;
 
-        public MenuController(IApplicationDbContext dbContext)
+        public SocialLinksController(IApplicationDbContext dbContext)
         {
             this._dbContext = dbContext;
         }
-        // GET: api/<MenuController>
+        // GET: api/<SocialLinksController>
         [HttpGet]
-        public async Task<IActionResult> GetAllMenus()
+        public async Task<IActionResult> GetAllSocialLinks()
         {
-            var result = await _mediator.Send(new GetAllMenusQuery());
+            var result = await _mediator.Send(new GetAllSocialLinksQuery());
             return Ok(result);
         }
 
-        // GET api/<MenuController>/5
+        // GET api/<SocialLinksController>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<MenuController>
+        // POST api/<SocialLinksController>
         [HttpPost]
-        public async Task<IActionResult> CreateMenuItem(CreateMenuItemCommand command)
+        public async Task<IActionResult> CreateSocialLink(CreateSocialLinkCommand command)
         {
             var id = await _mediator.Send(command);
-            return CreatedAtAction(nameof(GetAllMenus), new { id }, command);
+            return CreatedAtAction(nameof(GetAllSocialLinks), new { id }, command);
         }
 
-        // PUT api/<MenuController>/5
+        // PUT api/<SocialLinksController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateMenuItem(Guid id, CreateMenuItemCommand command)
+        public async Task<IActionResult> UpdateSocialLink(Guid id, CreateSocialLinkCommand command)
         {
             if (id != command.Id)
             {
@@ -55,7 +55,7 @@ namespace Restaurant.Controllers
             return NoContent();
         }
 
-        // DELETE api/<MenuController>/5
+        // DELETE api/<SocialLinksController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

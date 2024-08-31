@@ -300,14 +300,14 @@ namespace Infrastructure.Migrations
                     id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     PlatformName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Link = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Footerid = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    FooterBottomid = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_SocialLinks", x => x.id);
                     table.ForeignKey(
-                        name: "FK_SocialLinks_Footers_Footerid",
-                        column: x => x.Footerid,
+                        name: "FK_SocialLinks_Footers_FooterBottomid",
+                        column: x => x.FooterBottomid,
                         principalTable: "Footers",
                         principalColumn: "id");
                 });
@@ -319,14 +319,14 @@ namespace Infrastructure.Migrations
                     id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Link = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Headerid = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    HeaderTopid = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_NavigationItem", x => x.id);
                     table.ForeignKey(
-                        name: "FK_NavigationItem_Headers_Headerid",
-                        column: x => x.Headerid,
+                        name: "FK_NavigationItem_Headers_HeaderTopid",
+                        column: x => x.HeaderTopid,
                         principalTable: "Headers",
                         principalColumn: "id");
                 });
@@ -356,17 +356,17 @@ namespace Infrastructure.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Description", "Name", "NormalizedName" },
-                values: new object[] { new Guid("dd24143c-7b6d-4e71-8d52-da23811df169"), "e40d606f-c335-4ecc-a921-7346d26eecf5", "Can Manage Everything", "Admin", "ADMIN" });
+                values: new object[] { new Guid("fd662e4a-0d50-4c80-a52d-0b001281e5f9"), "2307a0b4-86bb-4ab8-b1af-30e936b49c94", "Can Manage Everything", "Admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "Address", "ConcurrencyStamp", "Email", "EmailConfirmed", "IsActive", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { new Guid("a30a3e41-6439-4e88-a7c6-1d908b400d7e"), 0, null, "1eac2887-885d-4f72-8218-fee89dceafed", "dineshjoshi0025@gmail.com", true, true, false, null, "DINESHJOSHI0025@GMAIL.COM", "DINESH25", "AQAAAAIAAYagAAAAELnFv9lZMfxrjcGuy962dbVFuwtPZPuIIL/zH7vjpjDVNzl6CfLuFOVzacdli/EmmA==", null, false, "bc9845e7-ecec-4291-807f-7bdbb64051fd", false, "Dinesh25" });
+                values: new object[] { new Guid("c6e6cc0c-f11a-4d47-be8e-ab70b4d35bb5"), 0, null, "9df54af4-8d9c-4db2-9564-078d93bdacd7", "dineshjoshi0025@gmail.com", true, true, false, null, "DINESHJOSHI0025@GMAIL.COM", "DINESH25", "AQAAAAIAAYagAAAAEEFXiZVR1qa0zBtFIqa5vnRGxr0OdD3c9t9aCLUtvcKzCyJU/wKrUi7wr1wwwgjICA==", null, false, "03c5bc5e-81c1-43b9-a40e-84dc3217942e", false, "Dinesh25" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { new Guid("dd24143c-7b6d-4e71-8d52-da23811df169"), new Guid("a30a3e41-6439-4e88-a7c6-1d908b400d7e") });
+                values: new object[] { new Guid("fd662e4a-0d50-4c80-a52d-0b001281e5f9"), new Guid("c6e6cc0c-f11a-4d47-be8e-ab70b4d35bb5") });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -413,14 +413,14 @@ namespace Infrastructure.Migrations
                 column: "MenuCategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_NavigationItem_Headerid",
+                name: "IX_NavigationItem_HeaderTopid",
                 table: "NavigationItem",
-                column: "Headerid");
+                column: "HeaderTopid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SocialLinks_Footerid",
+                name: "IX_SocialLinks_FooterBottomid",
                 table: "SocialLinks",
-                column: "Footerid");
+                column: "FooterBottomid");
         }
 
         /// <inheritdoc />
